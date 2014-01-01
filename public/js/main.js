@@ -17,11 +17,17 @@ $(document).ready(function() {
       text: $comments.val()
     }).done(function(data) {
       console.log(data, $successMsg)
-      $successMsg.show().fadeOut(5000);
+      $successMsg.show();
+      setTimeout(function() {
+        $successMsg.fadeOut(2000);
+      }, 4000);
       $errorMsg.hide();
     }).fail(function(data) {
       console.log('error', data)
-      $errorMsg.show().fadeOut(5000);
+      $errorMsg.show();
+      setTimeout(function() {
+        $errorMsg.fadeOut(2000);
+      }, 4000);
       $successMsg.hide();
     });
   });
