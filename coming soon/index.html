@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<title>MeWaiter</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/devices.css">
+		<script src="js/sys/css3-mediaqueries.js"></script>
+		
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="js/sys/ie8.canvas-support.js"></script>
+			<script>
+				document.createElement('header');
+				document.createElement('nav');
+				document.createElement('section');
+				document.createElement('article');
+				document.createElement('aside');
+				document.createElement('footer');
+			</script>
+		<![endif]-->
+		
+		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+
+		<script src="js/sys/plugins.js"></script>
+		<script src="js/sys/os.js"></script>
+		
+		<script src="js/config.js"></script>
+		<script src="js/func.js"></script>
+		
+		<script src="js/parallax.js"></script>
+		<script src="js/countdown.js"></script>
+		<script src="js/main.js"></script>		
+	</head>
+	
+	<body>
+		
+		<!-- PRE-LOADER -->
+		<div id="preloader">
+			<div class="back">
+				<div class="white"></div>
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+			
+			<div class="line"></div>
+		</div>
+		<!-- // PRE-LOADER -->
+			
+		<!-- HEADER -->
+<!-- 		<header>
+			<div class="logo">
+				<a href="/"><img src="img/logo.png"></a>
+			</div>
+		</header> -->
+
+		<div id="head-space"></div>
+		<!-- // HEADER -->
+
+		<!-- SLIDER -->
+		<section id="slider" class="inview">
+			<div class="pattern"></div>
+			<div class="text">
+				<h1>MEWAITER</h1>
+				<h3>MUY PRONTO EN TU RESTAURANTE</h3>
+			</div>
+			
+			<!-- PHOTOS -->
+			<div class="photos">
+				<div></div>
+			</div>
+			<!-- // PHOTOS -->
+			
+<!-- 			<div id="just-scroll" class="white">
+				<div>Just scroll</div>
+			</div> -->
+		</section>		
+		<!-- // SLIDER -->
+		
+		<!-- COUNTDOWN -->
+		<div id="countdown">
+			<div class="body">
+				<div id="days">
+					<canvas></canvas>
+					<div class="info">
+						<div class="num">--</div>
+						<div class="label">days</div>
+					</div>
+				</div>
+				
+				<div id="hrs">
+					<canvas></canvas>
+					<div class="info">
+						<div class="num">--</div>
+						<div class="label">hours</div>
+					</div>
+				</div>
+				
+				<div id="min">
+					<canvas></canvas>
+					<div class="info">
+						<div class="num">--</div>
+						<div class="label">minutes</div>
+					</div>
+				</div>
+				
+				<div id="sec">
+					<canvas></canvas>
+					<div class="info">
+						<div class="num">--</div>
+						<div class="label">seconds</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // COUNTDOWN -->
+		
+		<!-- ABOUT -->
+<!-- 		<section id="about" class="page">
+			<header>
+				<fieldset>
+					<legend align="center">MeWaiter.com</legend>
+				</fieldset>
+			</header>
+			<div class="body">
+				<div class="text">
+								Nuestro ágil sistema de gestion de pedidos y POS para tu restaurante lorem ipsum dolor, sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Yadda yadda.
+				</div>
+				
+ 				<div class="photos">
+					<div class="item first nopic">
+						<span></span>
+						<div>Unnamed<br/>Smb of smth</div>
+					</div>
+					<div class="item second nopic">
+						<span></span>
+						<div>Unnamed<br/>Smb of smth</div>
+					</div>
+					<div class="item third nopic">
+						<span></span>
+						<div>Unnamed<br/>Smb of smth</div>
+					</div>
+				</div> 
+			</div>
+		</section> -->
+		
+		<!-- CONTACTS 
+		<section id="contacts" class="page">
+        			<header>
+				<fieldset>
+					<legend align="center">Apúntate!</legend>
+				</fieldset>
+			</header> 
+			
+			<div class="body">
+			
+			 SUBSCRIBE FORM 
+				<div class="newsletter">
+					<h3>¡Te avisamos cuando puedas participar!</h3>
+					 
+					<form id="subscribe" action="subscribe.php" method="post">
+						
+						<input type="email" name="email" value="" placeholder="tu@correo.com" required>
+						<button id="send">Enviar</button>
+						
+						<div class="response">¡Gracias!</div>
+						<div class="error">¡Email invalido!</div>
+						
+					</form>
+				</div> 
+				
+ 				<div class="social">
+					<h3>Proximamente en...</h3>
+					
+					<ul class="icons">
+						<li class="twitter"><a href="#"></a></li>
+						<li class="facebook"><a href="#"></a></li>
+						<li class="tumblr"><a href="#"></a></li>
+						<li class="pinterest"><a href="#"></a></li>
+						<li class="gplus"><a href="#"></a></li>
+					</ul>
+					
+					<ul class="twitter"></ul>
+				</div>
+				
+				<div><button class="write-us-open">¿Sugerencias?</button></div>
+				
+				<div class="write-us">
+					<h3>Dejanos tus comentarios</h3>
+					
+					<div class="text"></div>
+					
+					<form id="feedback" action="feedback.php" method="post">
+						
+						<div><input type="text" name="uname" value="" placeholder="Tu nombre" required></div>
+						<div><input type="email" name="email" value="" placeholder="Tu email" required></div>
+						<div><textarea name="mess" placeholder="Message" required></textarea></div>
+						
+						<div class="ctr">
+							<span class="response">Gracias por tus sugerencias!</span>
+							<span class="error">Ha ocurrido un error :(</span>
+							<button id="write-us">Send</button>
+						</div>
+						
+					</form>
+				</div>
+
+				
+			</div>
+		</section>
+	// CONTACTS -->
+
+		<!-- FOOTER -->		
+		<footer>
+			Copyright © MeWaiter.com
+		</footer>
+		<!-- // FOOTER -->	
+		
+		<div id="ct" style="display:none"></div>
+	</body>
+</html>
