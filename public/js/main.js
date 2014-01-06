@@ -19,16 +19,14 @@ $(document).ready(function() {
       console.log(data, $successMsg)
       $successMsg.show();
       setTimeout(function() {
-        $successMsg.fadeOut(2000);
-      }, 4000);
-      $errorMsg.hide();
+        $successMsg.fadeOut(1000);
+      }, 5000);
     }).fail(function(data) {
       console.log('error', data)
       $errorMsg.show();
       setTimeout(function() {
-        $errorMsg.fadeOut(2000);
-      }, 4000);
-      $successMsg.hide();
+        $errorMsg.fadeOut(1000);
+      }, 5000);
     });
   });
 });
